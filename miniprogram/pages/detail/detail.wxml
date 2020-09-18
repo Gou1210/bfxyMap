@@ -1,0 +1,8 @@
+<text>名称：{{markerData[0].name}}</text>
+<text>地址：{{markerData[0].address}}</text>
+<text>详情：{{markerData[0].textVal}}</text>
+<view wx:for="{{markerData[0].img}}" wx:key="*this">
+  <image mode="widthFix"  src="{{item}}" data-index='{{index}}' bindtap='previewImg'/>
+</view>
+<map id="myMap"  latitude="{{markerData[0].latitude}}" longitude="{{markerData[0].longitude}}"  markers="{{markerData}}" show-location include-points="{{markerData}}"></map>
+

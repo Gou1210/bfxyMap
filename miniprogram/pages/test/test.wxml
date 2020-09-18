@@ -1,0 +1,9 @@
+<!--miniprogram/pages/test/test.wxml-->
+<!-- <map style="width:100%" polyline="{{polyline}}" longitude='{{markers[0].longitude}}' latitude='{{markers[0].latitude}}' markers="{{markers}}"  /> -->
+
+<map   polyline="{{polyline}}" longitude="{{marker.longitude}}" latitude="{{marker.latitude}}" markers="markers"/>
+<button type="primary" bindtap="kaiqi">开启</button>
+<button type="primary" bindtap="guanbi">关闭</button>
+
+<view>{{polyline[0].points.length}}</view>
+

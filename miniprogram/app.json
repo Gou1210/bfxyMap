@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/map",
+    "pages/detail/detail",
+    "pages/test/test"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于北方兴业的地图"
+    }
+  },
+  "requiredBackgroundModes": [
+    "location"
+   ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "地图",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#2E2E2E",
+    "selectedColor": "#e1251b",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/zhuye.png",
+        "selectedIconPath": "./images/zhuye1.png",
+        "text": "添加"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "./images/women.png",
+        "selectedIconPath": "./images/women1.png",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "iconPath": "./images/dingdan.png",
+        "selectedIconPath": "./images/dingdan1.png",
+        "text": "详情"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

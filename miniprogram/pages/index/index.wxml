@@ -1,0 +1,35 @@
+
+<map style="width:100%" longitude='{{markers[0].longitude}}' latitude='{{markers[0].latitude}}' markers="{{markers}}"  />
+<view class="container">
+  <button bindtap='getLocation'>选择提交位置</button>
+  <view wx:if="{{markers[0].address !=''}}">
+    <view>位置名称:{{markers[0].name}}</view>
+    <view>详细地址:{{markers[0].address}}</view>
+    <!-- <view>纬度:{{markers[0].latitude}}</view>
+    <view>经度:{{markers[0].longitude}}</view> -->
+  </view>
+</view>
+<view class="fb_main">
+
+    <view class="fb_content">
+        <textarea value="{{textVal}}" bindinput="handleTextInput" placeholder="请输入地点描述"  ></textarea>
+        <view class="fb_tool">
+            <button bindtap="handleChooseImg">+</button>
+
+          <view class="up_img_item"
+          wx:for="{{chooseImgs}}"
+          wx:key="*this"
+          bindtap="handleRemoveImg"
+          data-index="{{index}}"
+          >
+          <upimg url="{{item}}"  ></upimg>
+        </view>
+        </view>
+    </view>
+            <view class="form_btn_wrap">
+                <button bindtap="handleFormSubmit" type="primary">
+                    <!-- <icon type="success_no_circle" size="23" color="white"></icon> -->
+                    提交
+                </button>
+            </view>
+</view>

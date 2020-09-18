@@ -1,0 +1,3 @@
+<!-- <text>2222222222</text> -->
+<map id="myMap" style="width:100%; height: 1000rpx;" latitude="{{latitude}}" longitude="{{longitude}}" bindmarkertap="toaddress" markers="{{markers}}" show-location include-points="{{markers}}"></map>
+<button type="primary" bindtap="getDataTap">刷新</button>
